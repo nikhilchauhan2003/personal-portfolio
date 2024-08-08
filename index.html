@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b489f8fd21.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/image.34.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX designer</p>
+            <h1>Hi, I'm <span>Nikhil</span><br>chauhan From India</h1>
+        </div>
+    </div>
+  </div>
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/IMG_20221223_103607.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam dignissimos ipsum adipisci aut ducimus ipsam eius. Eaque doloribus provident omnis inventore dolorum repellat at voluptate expedita alias nisi! Dicta?
+                
+                 <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Front-End Development
+
+                                HTML/CSS: Basic knowledge of HTML and CSS for understanding design implementation.
+                                JavaScript: Basic understanding to collaborate effectively with developers</li>
+                            <li><span>Web Development</span><br>Responsive Design: Making websites look good on all devices (mobile, tablet, desktop).
+                                
+                                Purpose: Styles the visual presentation of web pages.
+                                Skills: Knowledge of selectors, properties, layout techniques (flexbox, grid), responsive design, and CSS frameworks (e.g., Bootstrap).</li>
+                            <li><span>App Development</span><br>React Native: A popular framework for building cross-platform mobile apps using JavaScript and React.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web/app interfaces.</li>
+                            <li><span>Web Development</span><br>Completed few project in web development  and want to do live projects in the companies.</li>
+                            <li><span>App Development</span><br>Building Android/ios apps.Use tool in yhis react js and normal framework</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>10th class</span><br>Completed my tenth class education from Himachal board with 72 percentage</li>
+                            <li><span>12th class</span><br>Completed my twelth class education from Himachal board with 66 percentage</li>
+                            <li><span>Btech (C.S.E)</span><br>Completed my btech computer science engineering from chitkara university Punjab with 9.2 CGP </li>
+                        </ul>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!---------------Services-->
+ <div id="Services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design involves creating the visual and functional aspects of websites. It’s a multifaceted field that combines aesthetics, usability, and technology.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-paint-brush"></i>
+                <h2>UI/UX Design</h2>
+                <p>UX design focuses on the overall experience of a user when interacting with a product, especially regarding usability and satisfaction.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>App Design refers to the process of creating the visual and functional aspects of a mobile or web application. It encompasses both User Interface (UI) and User Experience (UX) design principles to ensure that the application is both visually appealing and user-friendly</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/img 4.jpg" alt="Social Media">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>The app connects you to talented people around the world. Download it from the Play Store.</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/img5.jpg" alt="Social Media">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to talented people around the world. Download it from the Play Store</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/img 6.jpg" alt="Social Media">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to talented people around the world. Download it from the Play Store</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@exmaple.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    
+                </div>
+                <a href="images/RESUME....pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Nikhil chauahan</p>
+    </div>
+</div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(evt, tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        evt.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzyV3_kFm9B0KkjdeP8i7LCYbNKQP3fNaQYroPYGEgU22Og3orJjV7VpK8YZQlrVba3rw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    const msg =document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML= " "
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
